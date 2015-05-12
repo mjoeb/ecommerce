@@ -22,14 +22,22 @@ header
 		
 		h1
 			float: left
+			&:hover
+				cursor: pointer
+				color: #0896F2
 		ul
 			float: right
-			margin-top: 5px
+			margin-top: -10px		
 		li
-			float: left
+			float: left	
+			&:hover
+				border-radius: 20px
+				background: #0896F2
 			a
-				padding: 15px
 				color: #FFF
+				padding: 15px
+				display: block
+				
 .profile
 	position: absolute
 	width: 400px
@@ -45,6 +53,11 @@ header
 	margin: 15px auto
 	border-radius: 50%
 	background: #FFF
+	border: 3px solid #FFF
+	transition: border 1s linear
+	&:hover
+		border: 3px solid #0896F2
+		cursor: pointer
 .socialnav
 	width: 300px
 	margin: auto
@@ -56,8 +69,14 @@ header
 		width: 50px
 		height: 50px
 		border-radius: 50%
-		background: #FFF
 		margin: 0 4%
+		border-radius: 50%
+		background: #999
+		transition: background 0.5s linear
+		&:hover
+			background: #0896F2
+			cursor: pointer
+		
 .container
 	width: 960px
 	height: 500px
@@ -70,13 +89,12 @@ header
 		width: 500px
 		height: 500px
 		left: 50%
-
 		margin-left: -250px
 		border: 1px solid #CCC
 		box-shadow: 0 0 5px #000
 		position: relative
 		background: #FFF
-		z-index: 9999
+		z-index: 1
 		&:before
 			content: ""
 			width: 500px
