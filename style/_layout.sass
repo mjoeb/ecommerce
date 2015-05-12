@@ -1,51 +1,107 @@
-body
-	background: #CCC url("../images/bg1.jpg") no-repeat
-	background-size: 100% 500px
 header
+	background: #FFF url('../images/bg1.jpg') no-repeat
+	background-size: 100%
 	width: 100%
-	display: block
+	height: 400px
 	position: relative
-	&:after
+	&:before
 		content: ""
-		background: #111
-		opacity: 0.5
-		top: 0
-		bottom: 0
-		left: 0
-		right: 0
 		position: absolute
-		z-index: -1
-	div
+		background: #000
+		width: 100%
+		height: 80px
+		opacity: 0.5
+		margin: auto
+	nav
+		position: absolute
 		width: 960px
-		margin: 0 auto
-		padding: 15px
+		height: 100px
+		left: 50%
+		margin-left: -455px
+		margin-top: 25px 
+		
+		h1
+			float: left
+		ul
+			float: right
+			margin-top: 5px
+		li
+			float: left
+			a
+				padding: 15px
+				color: #FFF
+.profile
+	position: absolute
+	width: 400px
+	height: 250px
+	left: 50%
+	margin-left: -200px
+	margin-top: 110px 
+	border-radius: 30px
+	border: 5px solid #FFF
+.avatar
+	width: 150px
+	height: 150px
+	margin: 15px auto
+	border-radius: 50%
+	background: #FFF
+.socialnav
+	width: 300px
+	margin: auto
+	ul
 		overflow: hidden
-	h1
-		float: left
-		transition-property: font-color
-		transition-duration: 1s
-		transition-timing-function: linear
-
-
-	ul
-		float: right
-		margin: 10px
+		width: 300px	
 	li
 		float: left
-		a
-			padding: 15px
-			color: #CCC
-			&:hover
-				color: #00A3FF
-nav
-	margin-top: 450px
-	ul
-		float: right
-		margin: 10px
-	li
-		float: left
-		a
-			padding: 15px
-			color: #656262
-			&:hover
-				color: #00A3FF
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		background: #FFF
+		margin: 0 4%
+.container
+	width: 960px
+	height: 500px
+	border-left: 1px solid #777
+	border-right: 1px solid #777
+	margin: 0 auto
+	position: relative
+	padding-top: 60px
+	article
+		width: 500px
+		height: 500px
+		left: 50%
+
+		margin-left: -250px
+		border: 1px solid #CCC
+		box-shadow: 0 0 5px #000
+		position: relative
+		background: #FFF
+		z-index: 9999
+		&:before
+			content: ""
+			width: 500px
+			height: 500px
+			margin: 20px auto
+			border: 1px solid #CCC
+			transform: rotate(-10deg)
+			background: #FFF
+			position: absolute
+			top: -30
+			z-index: -1
+			box-shadow: 0 0 5px #000
+		&:after
+			content: ""
+			width: 500px
+			height: 500px
+			margin: 20px auto
+			border: 1px solid #CCC
+			transform: rotate(-5deg)
+			background: #FFF
+			position: absolute
+			top: -30
+			z-index: -1
+			box-shadow: 0 0 5px #000
+		p, h2
+			width: 400px
+			margin: 30px auto
+			line-height: 2
