@@ -1,0 +1,51 @@
+body
+	background: #CCC url("../images/bg.jpg") no-repeat
+	background-size: 100% 500px
+header
+	width: 100%
+	display: block
+	position: relative
+	&:after
+		content: ""
+		background: #111
+		opacity: 0.5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		position: absolute
+		z-index: -1
+	div
+		width: 960px
+		margin: 0 auto
+		padding: 15px
+		overflow: hidden
+	h1
+		float: left
+		transition-property: font-color
+		transition-duration: 1s
+		transition-timing-function: linear
+
+
+	ul
+		float: right
+		margin: 10px
+	li
+		float: left
+		a
+			padding: 15px
+			color: #CCC
+			&:hover
+				color: #00A3FF
+nav
+	margin-top: 450px
+	ul
+		float: right
+		margin: 10px
+	li
+		float: left
+		a
+			padding: 15px
+			color: #656262
+			&:hover
+				color: #00A3FF
