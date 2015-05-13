@@ -1,3 +1,5 @@
+body
+	font-family: 'Montserrat', Arial, sans-serif
 header
 	background: #FFF url('../images/bg1.jpg') no-repeat
 	background-size: 100%
@@ -9,19 +11,18 @@ header
 		position: absolute
 		background: #000
 		width: 100%
-		height: 80px
+		height: 15%
 		opacity: 0.5
-		margin: auto
 	nav
 		position: absolute
-		width: 960px
-		height: 100px
+		width: 80%
+		height: 25%
 		left: 50%
-		margin-left: -455px
-		margin-top: 25px 
-		
+		margin-left: -40%
+		margin-top: 20px 	
 		h1
 			float: left
+			color: #FFF
 			&:hover
 				cursor: pointer
 				color: #0896F2
@@ -39,17 +40,16 @@ header
 				display: block
 				
 .profile
-	position: absolute
-	width: 400px
-	height: 250px
-	left: 50%
-	margin-left: -200px
-	margin-top: 110px 
+	position: relative
+	width: 250px
+	height: 200px
+	margin: 0 auto
+	top: 27%
 	border-radius: 30px
 	border: 5px solid #FFF
 .avatar
-	width: 150px
-	height: 150px
+	width: 45%
+	height: 45%
 	margin: 15px auto
 	border-radius: 50%
 	background: #FFF
@@ -58,24 +58,41 @@ header
 	&:hover
 		border: 3px solid #0896F2
 		cursor: pointer
+	img
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		
+.socialnav *
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
 .socialnav
-	width: 300px
-	margin: auto
+	width: 200px
+	height: 50px
+	margin: 0 auto
 	ul
-		overflow: hidden
-		width: 300px	
+		width: 200px
+		height: 50px
 	li
 		float: left
-		width: 50px
-		height: 50px
-		border-radius: 50%
-		margin: 0 4%
-		border-radius: 50%
-		background: #999
-		transition: background 0.5s linear
-		&:hover
-			background: #0896F2
-			cursor: pointer
+		width: 40px
+		height: 40px
+		margin: 0 5px
+	img 
+		width: 40px
+		height: 40px
+		background: #888
+		border-radius: 40%
+		transition: background 1s linear
+.fb:hover
+	background: #3b5998
+.twitter:hover
+	background: #4099FF
+.github:hover
+	background: #000
+.googleplus:hover
+	background: #FFF
 		
 .container
 	width: 960px
@@ -84,42 +101,48 @@ header
 	border-right: 1px solid #777
 	margin: 0 auto
 	position: relative
-	padding-top: 60px
 	article
 		width: 500px
 		height: 500px
 		left: 50%
 		margin-left: -250px
+		margin-top: 80px
 		border: 1px solid #CCC
 		box-shadow: 0 0 5px #000
-		position: relative
+		position: absolute
+		top: 0
 		background: #FFF
-		z-index: 1
 		&:before
 			content: ""
 			width: 500px
 			height: 500px
-			margin: 20px auto
 			border: 1px solid #CCC
-			transform: rotate(-10deg)
-			background: #FFF
-			position: absolute
-			top: -30
-			z-index: -1
 			box-shadow: 0 0 5px #000
+			position: absolute
+			top: 0
+			background: #FFF
+			z-index: -1
+			transform: rotate(-5deg)
 		&:after
 			content: ""
 			width: 500px
 			height: 500px
-			margin: 20px auto
 			border: 1px solid #CCC
-			transform: rotate(-5deg)
-			background: #FFF
-			position: absolute
-			top: -30
-			z-index: -1
 			box-shadow: 0 0 5px #000
+			position: absolute
+			top: 0
+			background: #FFF
+			z-index: -2
+			transform: rotate(5deg)
 		p, h2
 			width: 400px
 			margin: 30px auto
 			line-height: 2
+footer
+	background: #333
+	height: 60px
+	margin-top: 500px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
