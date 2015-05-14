@@ -1,2 +1,194 @@
-body{line-height:1}html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,img,b,i,strong,small,sup,sub,ins,del,mark,abbr,address,q,blockquote,cite,dfn,code,pre,samp,var,kbd,dl,dt,dd,ol,ul,li,table,th,tr,td,caption,form,fieldset,legend,time,header,nav,section,aside,article,footer,figure,figcaption,canvas,audio,video{margin:0;padding:0;border:0}ul,ol{list-style:none}a{text-decoration:none}blockquote,q{quotes:none}table{border-collapse:collapse;border-spacing:0}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}body{font-family:"Montserrat",Arial,sans-serif}header{background:#FFF url("../images/bg1.jpg") no-repeat;background-size:100%;width:100%;height:400px;position:relative}header:before{content:"";position:absolute;background:#000;width:100%;height:15%;opacity:0.5}header nav{position:absolute;width:80%;height:25%;left:50%;margin-left:-40%;margin-top:20px}header nav h1{float:left;color:#FFF}header nav h1:hover{cursor:pointer;color:#0896F2}header nav ul{float:right;margin-top:-10px}header nav li{float:left}header nav li:hover{border-radius:20px;color:#0896F2}header nav li a{color:#FFF;padding:15px;display:block}header nav li a:hover{color:#0896F2}.profile{position:relative;width:250px;height:200px;margin:0 auto;top:27%;border-radius:30px;border:5px solid #FFF}.avatar{width:45%;height:45%;margin:15px auto;border-radius:50%;background:#FFF;border:3px solid #FFF;transition:border 1s linear}.avatar:hover{border:3px solid #0896F2;cursor:pointer}.avatar img{width:100%;height:100%;border-radius:50%}.socialnav *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.socialnav{width:200px;height:50px;margin:0 auto}.socialnav ul{width:200px;height:50px}.socialnav li{float:left;width:40px;height:40px;margin:0 5px}.socialnav img{width:40px;height:40px;background:#888;border-radius:40%;transition:background 1s linear}.fb:hover{background:#3b5998}.twitter:hover{background:#4099FF}.github:hover{background:#000}.googleplus:hover{background:#FFF}.container{width:960px;height:700px;border-left:1px solid #777;border-right:1px solid #777;margin:0 auto;position:relative}.container article{width:500px;height:500px;left:50%;margin-left:-250px;margin-top:80px;border:1px solid #CCC;box-shadow:0 0 5px #000;position:absolute;top:0;background:#FFF}.container article:before{content:"";width:500px;height:500px;border:1px solid #CCC;box-shadow:0 0 5px #000;position:absolute;top:0;background:#FFF;z-index:-1;transform:rotate(-5deg)}.container article:after{content:"";width:500px;height:500px;border:1px solid #CCC;box-shadow:0 0 5px #000;position:absolute;top:0;background:#FFF;z-index:-2;transform:rotate(5deg)}.container article p,.container article h2{width:400px;margin:30px auto;line-height:2}footer{height:20px;position:fixed;margin-top:60px;bottom:0;left:0;right:0}footer:before{content:"";position:absolute;background:#CCC;width:100%;height:60px;opacity:0.5}
+body {
+  line-height: 1; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, a, img, b, i,
+strong, small, sup, sub, ins, del, mark,
+abbr, address, q, blockquote, cite, dfn,
+code, pre, samp, var, kbd, dl, dt, dd,
+ol, ul, li, table, th, tr, td, caption,
+form, fieldset, legend, time, header, nav,
+section, aside, article, footer, figure,
+figcaption, canvas, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+html, body {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  padding-bottom: 20px; }
+
+header {
+  background: #FFF url("../images/bg1.jpg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 400px;
+  position: relative; }
+  header nav {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%; }
+    header nav h1 {
+      float: left;
+      padding: 25px;
+      color: #FFF; }
+      header nav h1:hover {
+        cursor: pointer;
+        color: #0896F2; }
+    header nav ul {
+      float: right; }
+    header nav li {
+      float: left; }
+      header nav li:hover {
+        border-radius: 20px;
+        color: #0896F2; }
+      header nav li a {
+        color: #FFF;
+        padding: 30px;
+        display: block; }
+        header nav li a:hover {
+          color: #0896F2; }
+
+.profile {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  top: 27%;
+  border-radius: 30px;
+  border: 5px solid #FFF; }
+
+.avatar {
+  width: 45%;
+  height: 45%;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: #FFF;
+  border: 3px solid #FFF;
+  transition: border 1s linear; }
+  .avatar:hover {
+    border: 3px solid #0896F2;
+    cursor: pointer; }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+
+.socialnav * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.socialnav {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto; }
+  .socialnav ul {
+    width: 200px;
+    height: 50px; }
+  .socialnav li {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px; }
+  .socialnav img {
+    width: 40px;
+    height: 40px;
+    background: #888;
+    border-radius: 40%;
+    transition: background 1s linear; }
+
+.fb:hover {
+  background: #3b5998; }
+
+.twitter:hover {
+  background: #4099FF; }
+
+.github:hover {
+  background: #000; }
+
+.googleplus:hover {
+  background: #FFF; }
+
+.container {
+  width: 960px;
+  height: 700px;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+  margin: 0 auto;
+  position: relative; }
+  .container article {
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 80px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 5px #000;
+    position: absolute;
+    top: 0;
+    background: #FFF; }
+    .container article:before {
+      content: "";
+      width: 500px;
+      height: 500px;
+      border: 1px solid #CCC;
+      box-shadow: 0 0 5px #000;
+      position: absolute;
+      top: 0;
+      background: #FFF;
+      z-index: -1;
+      transform: rotate(-5deg); }
+    .container article:after {
+      content: "";
+      width: 500px;
+      height: 500px;
+      border: 1px solid #CCC;
+      box-shadow: 0 0 5px #000;
+      position: absolute;
+      top: 0;
+      background: #FFF;
+      z-index: -2;
+      transform: rotate(5deg); }
+    .container article p, .container article h2 {
+      width: 400px;
+      margin: 30px auto;
+      line-height: 2; }
+
+footer {
+  height: 20px;
+  position: absolute;
+  margin-top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(100, 100, 100, 0.5); }
+
 /*# sourceMappingURL=base.css.map */
