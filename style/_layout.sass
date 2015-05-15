@@ -5,8 +5,7 @@ body
 	font-family: 'Montserrat', Arial, sans-serif
 	padding-bottom: 20px
 header
-	background: #FFF url('../images/weave.png') repeat
-	width: 100%
+	background: #FFF url('../images/pattern.png') repeat
 	height: 400px
 	position: relative
 	nav
@@ -20,24 +19,20 @@ header
 			float: left
 			padding: 25px
 			color: #FFF
-			
-			&:hover
-				cursor: pointer
-				color: #0896F2
 		ul
 			float: right
 					
 		li
 			float: left	
-			&:hover
-				border-radius: 20px
-				color: #0896F2
 			a
 				color: #FFF
 				padding: 30px 20px
 				display: block
 				&:hover
-					color: #0896F2				
+					color: #0896F2
+					text-shadow: 0 0 5px #0896F2
+
+			
 .profile
 	position: relative
 	width: 250px
@@ -45,9 +40,10 @@ header
 	margin: 5% auto
 	border-radius: 30px
 	border: 5px solid #FFF
+
 .avatar
-	width: 45%
-	height: 45%
+	width: 100px
+	height: 100px
 	margin: 15px auto
 	border-radius: 50%
 	background: #FFF
@@ -81,15 +77,21 @@ header
 		height: 40px
 		background: #888
 		border-radius: 40%
-		transition: background 1s linear
+		transition-property: background, border-radius
+		transition-duration: 1s
+		transition-timing-function: linear
 .fb:hover
 	background: #3b5998
+	border-radius: 50%
 .twitter:hover
 	background: #4099FF
+	border-radius: 50%
 .github:hover
 	background: #000
+	border-radius: 50%
 .googleplus:hover
 	background: #D84B37	
+	border-radius: 50%
 .container
 	max-width: 960px
 	height: 700px
@@ -99,7 +101,8 @@ header
 	position: relative
 	padding-top: 5%
 	article
-		width: 70%
+		max-width: 700px
+		width: 675px
 		height: 500px
 		border: 1px dashed #CCC
 		box-shadow: 0 0 5px #000
@@ -117,4 +120,6 @@ footer
 	bottom: 0
 	left: 0
 	right: 0
-	background: rgba(100, 100, 100, .5)
+	background: #00615F
+	color: #FFF
+	
