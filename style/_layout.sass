@@ -5,28 +5,28 @@ body
 	font-family: 'Montserrat', Arial, sans-serif
 	padding-bottom: 20px
 header
-	background: #FFF url('../images/bg1.jpg') no-repeat
-	background-size: 100%
+	background: #FFF url('../images/weave.png') repeat
 	width: 100%
 	height: 400px
 	position: relative
 	nav
 		background: rgba(0, 0, 0, .5)
-		position: relative
 		width: 100%
-		height: 20%
-		margin-bottom: 4%		
+		height: 20%	
+		div 
+			width: 80%
+			margin: 0 auto		
 		h1
 			float: left
 			padding: 25px
 			color: #FFF
-			margin-left: 5%
+			
 			&:hover
 				cursor: pointer
 				color: #0896F2
 		ul
 			float: right
-			margin-right: 5%		
+					
 		li
 			float: left	
 			&:hover
@@ -42,7 +42,7 @@ header
 	position: relative
 	width: 250px
 	height: 200px
-	margin: 0 auto
+	margin: 5% auto
 	border-radius: 30px
 	border: 5px solid #FFF
 .avatar
@@ -89,51 +89,26 @@ header
 .github:hover
 	background: #000
 .googleplus:hover
-	background: #D84B37
-		
+	background: #D84B37	
 .container
-	width: 960px
+	max-width: 960px
 	height: 700px
-	border-left: 1px solid #777
-	border-right: 1px solid #777
+	border-left: 1px dotted #777
+	border-right: 1px dotted #777
 	margin: 0 auto
 	position: relative
+	padding-top: 5%
 	article
-		width: 500px
+		width: 70%
 		height: 500px
-		left: 50%
-		margin-left: -250px
-		margin-top: 80px
-		border: 1px solid #CCC
+		border: 1px dashed #CCC
 		box-shadow: 0 0 5px #000
-		position: absolute
-		top: 0
 		background: #FFF
-		&:before
-			content: ""
-			width: 500px
-			height: 500px
-			border: 1px solid #CCC
-			box-shadow: 0 0 5px #000
-			position: absolute
-			top: 0
-			background: #FFF
-			z-index: -1
-			transform: rotate(-5deg)
-		&:after
-			content: ""
-			width: 500px
-			height: 500px
-			border: 1px solid #CCC
-			box-shadow: 0 0 5px #000
-			position: absolute
-			top: 0
-			background: #FFF
-			z-index: -2
-			transform: rotate(5deg)
+		margin: 0 auto
 		p, h2
-			width: 400px
-			margin: 30px auto
+			font-size: 1em
+			width: 80%
+			margin: 5% auto
 			line-height: 2
 footer
 	height: 20px
