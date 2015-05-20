@@ -2,3 +2,49 @@
 
 @import 'reset'
 @import 'layout'
+@media screen and (max-width: 800px)
+	#toggle
+		display: block
+	#mainnav
+		display: none
+		position: absolute
+		right: 0
+		top: 80px
+		background: #555
+		border: 2px solid #FFF
+		border-radius: 0 0 10px 10px 
+		a
+			padding: 15px		
+@media screen and (max-width: 768px)
+	.container
+		article
+			border: none
+			box-shadow: none
+		article, aside
+			float: none
+			width: 100%
+@media screen and (max-width: 450px)
+	.container
+		aside, article
+			padding: 0
+			section
+				padding: 10px
+@media screen and (max-width: 320px)
+	header, .container
+		width: 320px
+		margin: 0
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+

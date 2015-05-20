@@ -2,6 +2,8 @@
 
 ### things to do
 
-- need to add more responsiveness
-- footer problem
+- now responsive
+- need for good style in toggle menu
+
+
 
