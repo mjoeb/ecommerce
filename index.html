@@ -12,7 +12,7 @@
 	<nav>
 		<div>
 		<h1>My Work</h1>
-		<a href="#" onclick="toggle_menu('mainnav')" id="toggle">&#9776;</a>
+		<span onclick="toggle_menu('mainnav')" id="toggle">&#9776;</span>
 		<ul id="mainnav">	
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Contacts</a></li>
@@ -55,15 +55,15 @@
 		<small>&copy;MJOEB</small>
 	</footer>
 	<script type="text/javascript">
-	
+	<!--
     function toggle_menu(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
+       var i = document.getElementById(id);
+       if(i.style.display == 'block')
+          i.style.display = 'none';
        else
-          e.style.display = 'block';
+         i.style.display = 'block';
     }
-	
+	//-->
 </script>
 </body>
 </html>
