@@ -2,9 +2,6 @@
 
 @import 'reset'
 @import 'layout'
-@media screen and (min-width: 801px)
-#mainnav
-	display: block
 @media screen and (max-width: 800px)
 	#toggle
 		display: block
@@ -13,15 +10,20 @@
 		position: absolute
 		right: 0
 		top: 80px
+		right: -10px
 		background: rgba(54, 54, 54, 0.7)
 		border: 2px solid #FFF
 		border-radius: 0 0 10px 10px 
+
 		li
 			float: none
 			border-bottom: 1px solid #333
 			border-top: 1px solid #FFF
+			text-align: center
 			&:last-child
 				border-bottom: none
+			&:first-child
+				border-top: none
 		a
 			padding: 15px		
 @media screen and (max-width: 768px)
